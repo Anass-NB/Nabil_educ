@@ -9,21 +9,6 @@ function setRandomBack(){
 }
 
 
-setInterval(() => {
-  
-  if(localStorage.getItem("seconds")){
-    myscnds.textContent = Number(localStorage.getItem("seconds"));
-  }
-  if(localStorage.getItem("minutes")){
-    myminutes.textContent = Number(localStorage.getItem("minutes"));
-  }
-  if(localStorage.getItem("hours")){
-    myhrs.textContent = Number(localStorage.getItem("hours"));
-  }
-  if(localStorage.getItem("days")){
-    mydays.textContent = Number(localStorage.getItem("days"));
-  }
-}, 1000);
 
 let stgbtn = document.querySelector(".fa-gear");
 let stg = document.querySelector(".settings");
@@ -142,31 +127,24 @@ let myminutes = document.querySelector(".minutes");
 let myhrs = document.querySelector(".hours");
 let mydays = document.querySelector(".days");
 
-let c = setInterval(() => {
-  myscnds.textContent -= 1;
-  if(myscnds.textContent == 0){
-    myminutes.textContent -=1;
-    myscnds.textContent =60;
-  }
-  if(myminutes.textContent == 0){
-    myhrs.textContent -=1;
-    myminutes.textContent =60;
-  }
-  if(myhrs.textContent == 0){
-    mydays.textContent -=1;
-    myhrs.textContent =24;
-  }
+let countTime = new Date("Nov 03,2022 00:00:00").getTime();;
+// console.log(countTime);
+
+
+let counter = setInterval(() => {
+  let datenow = new Date().getTime();
+  let differTime = countTime - datenow;
+
+  let days = Math.floor(differTime / (1000*60*60*24));
+  let hours = Math.floor((differTime % (1000*60*60*24)) / (1000*60*60) );
+  let munites = Math.floor((differTime % (1000*60*60)) / (1000*60) );
+  let seconds = Math.floor((differTime % (1000*60)) / (1000) );
+  mydays.textContent = days;
+  myhrs.textContent = hours;
+  myminutes.innerHTML = munites;
+  myscnds.innerHTML = seconds;
+
 }, 1000);
-
-setInterval(() => {
-localStorage.setItem("seconds",myscnds.textContent);
-localStorage.setItem("minutes",myminutes.textContent);
-localStorage.setItem("hours",myhrs.textContent);
-localStorage.setItem("days",mydays.textContent);
-}, 1000);
-
-
-
 
 
 

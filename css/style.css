@@ -85,6 +85,12 @@ body {
   cursor: pointer;
 
 }
+/* @media (max-width : 545px) {
+  .toogle-set {
+    margin: 0px -61px;
+
+  }
+} */
 .settings i{
   padding: 10px;
   
