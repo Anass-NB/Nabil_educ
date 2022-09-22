@@ -4,8 +4,8 @@ let backinterval;
 //how to change background to random image
 function setRandomBack(){
   backinterval =  setInterval(() => {
-    document.querySelector(".landing").style.backgroundImage = `url("../imgs/educ_${Math.floor(Math.random()*5)}.jpg")`;
-    }, 5000);  
+    document.querySelector(".landing").style.backgroundImage = `url("../imgs/educ${Math.floor(Math.random()*5)}.jpg")`;
+    }, 1000);  
 }
 
 
