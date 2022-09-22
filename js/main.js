@@ -184,7 +184,7 @@ function addActiveClass(elemnts){
 }
 
 //bullets
-let bulletsSection;
+let bulletsSection =false;
 let mybtnbullet = document.querySelectorAll(".set-background .box-bullets span");
 
 mybtnbullet.forEach((span) => {
