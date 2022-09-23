@@ -39,7 +39,10 @@ html::-webkit-scrollbar-thumb {
 html::-webkit-scrollbar-track {
   background-color: #5555;
 }
-
+::selection {
+  background-color: #0AA1DD;
+  color: white;
+}
 
 /* Small */
 @media (min-width: 768px){
