@@ -822,6 +822,7 @@ ul.show-links {
   margin: 0 10px;
   left: 0;
   z-index: 100;
+  display: none;
 }
 .nav-bullets .bullet {
   border: 3px solid var(--main-color);
