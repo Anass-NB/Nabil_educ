@@ -976,8 +976,97 @@ ul.show-links {
 .contact .container form .submit:hover {
   background-color: transparent;
 }
-/* Start COntact */
+/* End COntact */
 
+
+/* STart Footer */
+footer {
+  padding-top: var(--padd-top);
+  padding-bottom: var(--padd-bottom);
+  background-color: #ccc;
+}
+footer .container{
+
+}
+footer .container .boxes{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  gap: 20px;
+}
+footer .container .boxes .box{
+
+}
+footer .container .boxes .box .logo img{
+  height: 120px;
+}
+footer  .box .social-icons {
+  display: flex;
+}
+footer  .box .social-icons i{
+  margin: 10px 10px 10px 0;
+  padding: 5px;
+  background-color: #eee;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+footer  .box  .text p {
+  font-size: 17px;
+  line-height: 1.5;
+  letter-spacing: 0.4px;
+  margin: 0;
+}
+footer  .box .links {
+  margin: 0;
+  padding: 0;
+}
+footer  .box .links li{
+  margin-bottom: 30px;
+  position: relative;
+  transition: .3s;
+
+}
+footer  .box .links li::before {
+  position: absolute;
+  content: "\F101";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: var(--main-color);
+}
+footer  .box .links li:hover {
+  padding-left: 10px;
+}
+footer  .box .links li:hover a{
+  color: #4c4545;
+}
+footer  .box .links li a{
+  color: black;
+  margin-left: 26px;
+}
+footer  .box .infos .info{
+  display: flex;
+  margin-bottom: 14px;
+}
+footer  .box .infos p{
+  margin: 0 0 26px;
+  position: relative;
+}
+footer  .box .infos  i{
+  width: fit-content;
+  margin-right: 11px;
+  color: var(--main-color);
+  
+}
+
+
+
+footer  .box .infos p i{
+
+}
+/* End Footer */
 
 
 /* Test map */
