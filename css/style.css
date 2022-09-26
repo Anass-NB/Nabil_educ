@@ -458,10 +458,10 @@ ul.show-links {
     height: 70%;
   }
 }
-@media (max-width : 374px) {
+@media (max-width : 545px) {
   .overlay-img .img-box img{
-    width: 92%;
-    height: 54%;
+    width: 73%;
+    height: 32%;
   }
 }
 .overlay-img .img-box span{
