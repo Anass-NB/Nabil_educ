@@ -1118,3 +1118,6 @@ footer  .box iframe{
 
 
 /* Test map */
+.map {
+  text-align: center;
+}
